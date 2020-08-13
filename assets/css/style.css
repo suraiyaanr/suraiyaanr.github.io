@@ -217,13 +217,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.3);
+  background: #ffffff4d;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 #hero .hero-container {
@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 #hero p {
@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 5px solid #e8a9a9;
+  border-bottom: 5px solid #e46363;
 }
 
 @media (min-width: 1024px) {
@@ -1052,14 +1052,14 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #f4f6fd;
+  color: #000000;
   font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #d78e8e;
+  background: #ffffff;
 }
 
 #footer .copyright {
