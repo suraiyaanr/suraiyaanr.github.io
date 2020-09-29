@@ -1052,14 +1052,14 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #000000;
+  color: #fff;
   font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #ffffff;
+  background: #116466;
 }
 
 #footer .copyright {
@@ -1093,10 +1093,10 @@ section {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d78e8e; 
+  background: #116466; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #e8a9a9; 
+  background: #178183; 
 }
