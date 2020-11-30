@@ -281,7 +281,7 @@ section {
 }
 
 .section-bg {
-  background: #f5ffff;
+  background: #f8eef3;
 }
 
 .section-title {
@@ -455,7 +455,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f4ffff;
+  background: #f8e9f0;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -669,7 +669,7 @@ section {
 }
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #085252;
+  color: #765d69;
   font-size: 26px;
 }
 
