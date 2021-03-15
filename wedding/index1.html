@@ -83,21 +83,13 @@
         </div>
       </div>
     </section>
-<!-- 
-    <audio  autoplay="autoplay" controls>
+    <audio id="player" autoplay="autoplay" controls>
       <source src="lagu.mp3" type="audio/mp3">
-  </audio> -->
-  <div style="position: fixed; top: 10px; left: 5px;">
-
-    <iframe id="player" autoplay="autoplay" width="0" height="0" src="lagu.mp3"></iframe>
-    
-    
-    </div>
+  </audio>
       <section class="p-8 text-gray-600 bg-gray-50 body-font">
       <div
         class="rounded-md bg-white opacity-80 shadow-lg text-gray-800 p-2 m-1"
       >
-      <button onclick="openModal('mymodalcentered1')">test</button>
         <center><img src="bismillah.png" width="500" alt="" /></center>
         <h1 class="text-center text-3xl md:text-3xl f1">Walimatul Urus</h1>
         <h1 class="pt-2 text-center text-2xl md:text-4xl f3 leading-tight">
@@ -443,8 +435,6 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
-
-document.getElementById("player").click();
     </script>
   </body>
 </html>
