@@ -81,11 +81,13 @@
           <br />
           <center><img src="div2.png" alt="" width="500" /></center>
         </div>
-      </div>
-    </section>
-    <audio id="player" autoplay="autoplay" controls>
-      <source src="lagu.mp3" type="audio/mp3">
-  </audio>
+      </section>
+    </div> 
+    <center>
+    <br><audio id="player" autoplay="autoplay" controls>
+    <source src="lagu.mp3" type="audio/mp3">
+</audio></center>
+   
       <section class="p-8 text-gray-600 bg-gray-50 body-font">
       <div
         class="rounded-md bg-white opacity-80 shadow-lg text-gray-800 p-2 m-1"
@@ -206,218 +208,51 @@
       </div>
     </section>
 
-    <!-- component -->
-    <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile
-    <section
-      id="bottom-navigation"
-      class="block fixed inset-x-0 bottom-0 z-10 bg-white"
-    >
-      <div id="tabs" class="flex justify-between">
-        <a
-        data-toggle="modal" data-target="firstModal"
-          class="modal-open w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
-        >
-          <center><img width="25" src="pin.png" /></center>
-          <span class="tab tab-home block text-xs">Location</span>
-        </a>
-        <a
-        data-toggle="modal" data-target="secondModal"
-          class="modal-open w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
-        >
-          <center><img width="25" src="call.webp" /></center>
-          <span class="tab tab-home block text-xs">Call</span>
-        </a>
-        <a
-        data-toggle="modal" data-target="Modal3"
-          class="modal-open w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
-        >
-          <center><img width="25" src="wa.webp" /></center>
-          <span class="tab tab-home block text-xs">WhatsApp</span>
-        </a>
-        <a
-        onclick="openModal('mymodalcentered4')"
-          class="modal-open w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
-        >
-          <center>
-            <img
-              width="28"
-              src="https://img.icons8.com/wired/64/000000/like-message.png"
-            />
-          </center>
-          <span class="tab tab-home block text-xs">RSVP</span>
-        </a>
-      </div>
-    </section> -->
-    
-   <!--
-    <section>
-      <dialog id="mymodalcentered1">
-        <div class="p-8 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
-            <div class="md:p-8 p-8 bg-white flex rounded-lg relative">
-                <div class="flex flex-col items-start">
-                  <center><h1 class="text-center text-3xl md:text-3xl f3">Lokasi Majlis</h1><br><br>
-                    <p class="text-center leading-relaxed mb-6 f2 font-medium">
-                      1081, Jalan Semarak 22, <br />
-                      Taman Panchor Jaya,<br />
-                      70400 Seremban, <br />
-                      Negeri Sembilan
-                    </p>
-                    <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.2799809226512!2d102.00021661525274!3d2.733069856330431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdde15ed1d5bc1%3A0xd67b3bce7f203104!2s1081%2C%20Jalan%20Semarak%2022%2C%20Taman%20Panchor%20Jaya%2C%2070400%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1615659690489!5m2!1sen!2smy" 
-                      width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  </div>
-
-                    <div class="p-7 flex justify-end items-center w-full">
-                        <button type="button" onclick="modalClose('mymodalcentered1')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            Close
-                        </button></center>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </dialog>
-      <dialog id="mymodalcentered2">
-        <div class="p-8 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
-            <div class="md:p-16 p-16 bg-white flex rounded-lg relative">
-                <div class="flex flex-col items-start">
-                  <center><h1 class="text-center text-3xl md:text-3xl f3">P.I.C</h1><br>
-
-                    <table class="table-auto text-left whitespace-no-wrap">
-                      <tbody>
-                        <tr>
-                          <td class="px-4 py-3">Syuhada</td>
-                          <td class="px-4 py-3"><a class="text-indigo-500" href="tel:01139388505">
-                            <img width="25" src="call.webp" />
-                          </a></td>
-                        </tr>
-                        <tr>
-                          <td class="px-4 py-3">Hafiz</td>
-                          <td class="px-4 py-3"><a class="text-indigo-500" href="tel:01139388505">
-                            <img width="25" src="call.webp" />
-                          </a></td>
-                        </tr>
-                        <tr>
-                          <td class="px-4 py-3">Suraiya</td>
-                          <td class="px-4 py-3"><a class="text-indigo-500" href="tel:01139388505">
-                            <img width="25" src="call.webp" />
-                          </a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="p-7 flex justify-end items-center w-full">
-                      <button type="button" onclick="modalClose('mymodalcentered2')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                          Close
-                      </button></center>
-                  </div>
-                </div>
-            </div>
-        </div>
-      </dialog>
-      <dialog id="mymodalcentered3">
-        <div class="p-8 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
-            <div class="md:p-16 p-16 bg-white flex rounded-lg relative">
-                <div class="flex flex-col items-start">
-                  <center><h1 class="text-center text-3xl md:text-3xl f3">P.I.C</h1><br>
-
-                    <table class="table-auto text-left whitespace-no-wrap">
-                      <tbody>
-                        <tr>
-                          <td class="px-4 py-3">Syuhada</td>
-                          <td class="px-4 py-3"><a class="text-indigo-500" href="https://wa.link/7serwh">
-                            <img width="25" src="wa.webp" />
-                          </a></td>
-                        </tr>
-                        <tr>
-                          <td class="px-4 py-3">Hafiz</td>
-                          <td class="px-4 py-3"><a class="text-indigo-500" href="https://wa.link/7serwh">
-                            <img width="25" src="wa.webp" />
-                          </a></td>
-                        </tr>
-                        <tr>
-                          <td class="px-4 py-3">Suraiya</td>
-                          <td class="px-4 py-3"><a class="text-indigo-500" href="https://wa.link/7serwh">
-                            <img width="25" src="wa.webp" />
-                          </a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="p-7 flex justify-end items-center w-full">
-                      <button type="button" onclick="modalClose('mymodalcentered3')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                          Close
-                      </button></center>
-                  </div>
-                </div>
-            </div>
-        </div>
-      </dialog>
-      <dialog id="mymodalcentered4" class="bg-transparent z-0 relative w-screen h-screen">
-        <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
-            <div class="bg-white flex rounded-lg w-1/2 relative">
-                <div class="flex flex-col items-start">
-                    <div class="p-7 flex items-center w-full">
-                        <div class="text-gray-900 font-bold text-lg">1</div>
-                        <svg onclick="modalClose('mymodalcentered4')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
-                        </svg>
-                    </div>
-      
-                    <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
-                        <p>First Line</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    
-                    <div class="p-7 flex justify-end items-center w-full">
-                        <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">
-                            Ok
-                        </button>
-                        <button type="button" onclick="modalClose('mymodalcentered4')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </dialog>
-    </section> -->
-
-    <div class="bg-white w-full  h-16 px-6 py-2 flex justify-between text-gray-font fixed bottom-0 shadow-lg z-40 border-t border-gray-99">
-      <a href="/">
-        <span class="px-2 py-1 cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm  flex flex-col items-center text-center text-primary">
-    
-          <a class='modal-open' data-toggle="modal" data-target="firstModal"><img width="25" src="pin.png" />
-        </span>
-      </a>
-      <a href="/">
-        <span class="px-2 py-1 cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm  flex flex-col items-center text-center">
+      <section
+        id="bottom-navigation"
+        class="block fixed inset-x-0 bottom-0 z-10 bg-white"
+      >
+        <div id="tabs" class="flex justify-between">
+          <a href="https://www.google.com/maps?ll=2.733065,102.002405&z=15&t=m&hl=en&gl=MY&mapclient=embed&q=1081,+Jalan+Semarak+22+Taman+Panchor+Jaya+70400+Seremban+Negeri+Sembilan"
+          
+            class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1 " 
+          >
+            
+            <span class="tab tab-home block text-xs"><center><img width="25" src="pin.png" /></center>Location</span>
+          </a>
+          <a href=""
          
-          <a class='modal-open' data-toggle="modal" data-target="secondModal"><img width="25" src="pin.png" />
-        </span>
-      </a>
-     <a href="/">
-      <span class="px-2 py-1 cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm   flex flex-col items-center text-center">
-        <a class='modal-open' data-toggle="modal" data-target="Modal3"><img width="25" src="pin.png" />
-      </span>
-     </a>
-     <a href="/">
-      <span class="px-2 py-1 cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm   flex flex-col items-center text-center">
-        <a class='modal-open' data-toggle="modal" data-target="Modal4"><img width="25" src="pin.png" />
-      </span>
-     </a>
-    </div> -->
- <!-- Add JS For Navbar-->
+            class=" w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+          >
+            
+            <span class="tab tab-home block text-xs modal-open" data-toggle= "modal" data-target="secondModal"><center><img width="25" src="call.webp" /></center>Call</span>
+
+          </a>
+          <a href=""
+          
+            class=" w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+          >
+            
+            <span class="tab tab-home block text-xs modal-open" data-toggle= "modal" data-target="Modal3"><center><img width="25" src="wa.webp" /></center>WhatsApp</span>
+          </a>
+          <a href=""
+          
+            class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+          >
+            
+            <span class="tab tab-home block text-xs modal-open" data-toggle= "modal" data-target="Modal4"><center><img width="28" src="https://img.icons8.com/wired/64/000000/like-message.png"/>
+            </center>RSVP</span>
+          </a>
+        </div>
+      </section>
+
    
   <script
     src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
     defer
   ></script>
 
-    <div>
-      <a class='bg-blue-500 py-2 px-5 text-white rounded modal-open' data-toggle="modal" data-target="firstModal">Open First Modal</a>
-      <a class='bg-blue-500 py-2 px-5 text-white rounded modal-open' data-toggle="modal" data-target="secondModal">Open Second Modal</a>
-      <a class='bg-blue-500 py-2 px-5 text-white rounded modal-open' data-toggle="modal" data-target="Modal3">Open Second Modal</a>
-      <a class='bg-blue-500 py-2 px-5 text-white rounded modal-open' data-toggle="modal" data-target="Modal4">Open Second Modal</a>
 
-    </div>
     
     <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="firstModal">
         <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
@@ -446,7 +281,6 @@
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.2799809226512!2d102.00021661525274!3d2.733069856330431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdde15ed1d5bc1%3A0xd67b3bce7f203104!2s1081%2C%20Jalan%20Semarak%2022%2C%20Taman%20Panchor%20Jaya%2C%2070400%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1615659690489!5m2!1sen!2smy" 
                   width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  </div>
 
-        
               <div class="flex justify-end pt-2">
                 <button class="modal-close px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-gray-900 border border-gray-900 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded-3xl">Close</button>
               </div>
@@ -474,7 +308,7 @@
               <table class="table-auto text-left whitespace-no-wrap">
                 <tbody>
                   <tr>
-                    <td class="px-4 py-3">Syuhada</td>
+                    <td class="px-4 pr-24 py-3">Syuhada</td>
                     <td class="px-4 py-3"><a class="text-indigo-500" href="tel:01139388505">
                       <img width="25" src="call.webp" />
                     </a></td>
