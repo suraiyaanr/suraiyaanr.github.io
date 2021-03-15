@@ -207,36 +207,36 @@
     </section>
 
     <!-- component -->
-    <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile-->
-    <!-- <section
+    <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile
+    <section
       id="bottom-navigation"
       class="block fixed inset-x-0 bottom-0 z-10 bg-white"
     >
       <div id="tabs" class="flex justify-between">
         <a
-        onclick="openModal('mymodalcentered1')"
-          class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+        data-toggle="modal" data-target="firstModal"
+          class="modal-open w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
         >
           <center><img width="25" src="pin.png" /></center>
           <span class="tab tab-home block text-xs">Location</span>
         </a>
         <a
-        onclick="openModal('mymodalcentered2')"
-          class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+        data-toggle="modal" data-target="secondModal"
+          class="modal-open w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
         >
           <center><img width="25" src="call.webp" /></center>
           <span class="tab tab-home block text-xs">Call</span>
         </a>
         <a
-        onclick="openModal('mymodalcentered3')"
-          class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+        data-toggle="modal" data-target="Modal3"
+          class="modal-open w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
         >
           <center><img width="25" src="wa.webp" /></center>
           <span class="tab tab-home block text-xs">WhatsApp</span>
         </a>
         <a
         onclick="openModal('mymodalcentered4')"
-          class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+          class="modal-open w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
         >
           <center>
             <img
@@ -247,9 +247,9 @@
           <span class="tab tab-home block text-xs">RSVP</span>
         </a>
       </div>
-    </section>
+    </section> -->
     
-   
+   <!--
     <section>
       <dialog id="mymodalcentered1">
         <div class="p-8 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
@@ -379,9 +379,44 @@
         </div>
       </dialog>
     </section> -->
+
+    <div class="bg-white w-full  h-16 px-6 py-2 flex justify-between text-gray-font fixed bottom-0 shadow-lg z-40 border-t border-gray-99">
+      <a href="/">
+        <span class="px-2 py-1 cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm  flex flex-col items-center text-center text-primary">
+    
+          <a class='modal-open' data-toggle="modal" data-target="firstModal"><img width="25" src="pin.png" />
+        </span>
+      </a>
+      <a href="/">
+        <span class="px-2 py-1 cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm  flex flex-col items-center text-center">
+         
+          <a class='modal-open' data-toggle="modal" data-target="secondModal"><img width="25" src="pin.png" />
+        </span>
+      </a>
+     <a href="/">
+      <span class="px-2 py-1 cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm   flex flex-col items-center text-center">
+        <a class='modal-open' data-toggle="modal" data-target="Modal3"><img width="25" src="pin.png" />
+      </span>
+     </a>
+     <a href="/">
+      <span class="px-2 py-1 cursor-pointer hover:bg-gray-200 hover:text-gray-700 text-sm   flex flex-col items-center text-center">
+        <a class='modal-open' data-toggle="modal" data-target="Modal4"><img width="25" src="pin.png" />
+      </span>
+     </a>
+    </div> -->
+ <!-- Add JS For Navbar-->
+   
+  <script
+    src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    defer
+  ></script>
+
     <div>
       <a class='bg-blue-500 py-2 px-5 text-white rounded modal-open' data-toggle="modal" data-target="firstModal">Open First Modal</a>
       <a class='bg-blue-500 py-2 px-5 text-white rounded modal-open' data-toggle="modal" data-target="secondModal">Open Second Modal</a>
+      <a class='bg-blue-500 py-2 px-5 text-white rounded modal-open' data-toggle="modal" data-target="Modal3">Open Second Modal</a>
+      <a class='bg-blue-500 py-2 px-5 text-white rounded modal-open' data-toggle="modal" data-target="Modal4">Open Second Modal</a>
+
     </div>
     
     <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="firstModal">
@@ -400,12 +435,21 @@
         <div class="modal-content py-4 text-left px-6">
             <!--Title-->
             <div class="flex justify-between items-center pb-3">
-            <p class="text-2xl font-bold">First Modal</p>
-            <div class="modal-close cursor-pointer z-50">
-                <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-                </svg>
-            </div>
+              <center><h1 class="text-center text-3xl md:text-3xl f3">Lokasi Majlis</h1><br><br>
+                <p class="text-center leading-relaxed mb-6 f2 font-medium">
+                  1081, Jalan Semarak 22, <br />
+                  Taman Panchor Jaya,<br />
+                  70400 Seremban, <br />
+                  Negeri Sembilan
+                </p>
+                <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.2799809226512!2d102.00021661525274!3d2.733069856330431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdde15ed1d5bc1%3A0xd67b3bce7f203104!2s1081%2C%20Jalan%20Semarak%2022%2C%20Taman%20Panchor%20Jaya%2C%2070400%20Seremban%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1615659690489!5m2!1sen!2smy" 
+                  width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  </div>
+
+        
+              <div class="flex justify-end pt-2">
+                <button class="modal-close px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-gray-900 border border-gray-900 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded-3xl">Close</button>
+              </div>
             </div>
         </div>
         </div>
@@ -427,16 +471,106 @@
         <div class="modal-content py-4 text-left px-6">
             <!--Title-->
             <div class="flex justify-between items-center pb-3">
-                <p class="text-2xl font-bold">Second Modal</p>
-                <div class="modal-close cursor-pointer z-50">
-                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-                    </svg>
+              <table class="table-auto text-left whitespace-no-wrap">
+                <tbody>
+                  <tr>
+                    <td class="px-4 py-3">Syuhada</td>
+                    <td class="px-4 py-3"><a class="text-indigo-500" href="tel:01139388505">
+                      <img width="25" src="call.webp" />
+                    </a></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-3">Hafiz</td>
+                    <td class="px-4 py-3"><a class="text-indigo-500" href="tel:01139388505">
+                      <img width="25" src="call.webp" />
+                    </a></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-3">Suraiya</td>
+                    <td class="px-4 py-3"><a class="text-indigo-500" href="tel:01139388505">
+                      <img width="25" src="call.webp" />
+                    </a></td>
+                  </tr>
+                </tbody>
+              </table>
+                <div class="flex justify-end pt-2">
+                  <button class="modal-close px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-gray-900 border border-gray-900 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded-3xl">Close</button>
                 </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="Modal3">
+      <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+      
+      <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">(Esc)</span>
+      </div>
+  
+      <!-- Add margin if you want to see some of the overlay behind the modal-->
+      <div class="modal-content py-4 text-left px-6">
+          <!--Title-->
+          <div class="flex justify-between items-center pb-3">
+            <table class="table-auto text-left whitespace-no-wrap">
+              <tbody>
+                <tr>
+                  <td class="px-4 py-3">Syuhada</td>
+                  <td class="px-4 py-3"><a class="text-indigo-500" href="https://wa.link/7serwh">
+                    <img width="25" src="wa.webp" />
+                  </a></td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3">Hafiz</td>
+                  <td class="px-4 py-3"><a class="text-indigo-500" href="https://wa.link/7serwh">
+                    <img width="25" src="wa.webp" />
+                  </a></td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3">Suraiya</td>
+                  <td class="px-4 py-3"><a class="text-indigo-500" href="https://wa.link/7serwh">
+                    <img width="25" src="wa.webp" />
+                  </a></td>
+                </tr>
+              </tbody>
+            </table>
+              <div class="flex justify-end pt-2">
+                <button class="modal-close px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-gray-900 border border-gray-900 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded-3xl">Close</button>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center" id="Modal4">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">(Esc)</span>
+    </div>
+
+    <!-- Add margin if you want to see some of the overlay behind the modal-->
+    <div class="modal-content py-4 text-left px-6">
+        <!--Title-->
+        <div class="flex justify-between items-center pb-3">
+            <p class="text-2xl font-bold">4Modal</p>
+            <div class="modal-close cursor-pointer z-50">
+                <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                </svg>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
     
     <script>
        var openmodal = document.querySelectorAll('.modal-open')
