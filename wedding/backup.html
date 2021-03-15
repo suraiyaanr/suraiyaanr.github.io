@@ -83,13 +83,21 @@
         </div>
       </div>
     </section>
-    <audio id="player" autoplay="autoplay" controls>
+<!-- 
+    <audio  autoplay="autoplay" controls>
       <source src="lagu.mp3" type="audio/mp3">
-  </audio>
+  </audio> -->
+  <div style="position: fixed; top: 10px; left: 5px;">
+
+    <iframe id="player" autoplay="autoplay" width="0" height="0" src="lagu.mp3"></iframe>
+    
+    
+    </div>
       <section class="p-8 text-gray-600 bg-gray-50 body-font">
       <div
         class="rounded-md bg-white opacity-80 shadow-lg text-gray-800 p-2 m-1"
       >
+      <button onclick="openModal('mymodalcentered1')">test</button>
         <center><img src="bismillah.png" width="500" alt="" /></center>
         <h1 class="text-center text-3xl md:text-3xl f1">Walimatul Urus</h1>
         <h1 class="pt-2 text-center text-2xl md:text-4xl f3 leading-tight">
@@ -147,16 +155,7 @@
         </center>
       </div>
     </section>
-    <header class="text-gray-600 body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a onclick="openModal('mymodalcentered1')" class="mr-5 hover:text-gray-900">First Link</a>
-          <a class="mr-5 hover:text-gray-900">Second Link</a>
-          <a class="mr-5 hover:text-gray-900">Third Link</a>
-          <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-        </nav>
-      </div>
-    </header>
+
 <section>
   <section class="p-8 text-gray-700 bg-gray-50 body-font">
     <div
@@ -218,7 +217,7 @@
 
     <!-- component -->
     <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile-->
-    <!-- <section
+    <section
       id="bottom-navigation"
       class="block fixed inset-x-0 bottom-0 z-10 bg-white"
     >
@@ -257,9 +256,9 @@
           <span class="tab tab-home block text-xs">RSVP</span>
         </a>
       </div>
-    </section> -->
+    </section>
     
-   
+
     <section>
       <dialog id="mymodalcentered1">
         <div class="p-8 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
@@ -444,6 +443,8 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+document.getElementById("player").click();
     </script>
   </body>
 </html>
