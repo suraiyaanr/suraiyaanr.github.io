@@ -40,6 +40,10 @@
       ::-webkit-scrollbar-thumb:hover {
         background: rgb(0, 0, 0); 
       }
+      .circular-image {
+        border-radius: 50%;
+        object-fit: cover; /* Ensures the image covers the container without distortion */
+      }
       </style>
   </head>
   <body>
@@ -96,7 +100,7 @@
 
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="about-image svg">
-                        <img src="images/me.png" class="img-fluid" alt="svg image">
+                        <img src="images/me.png" class="img-fluid circular-image" alt="svg image">
                     </div>
                 </div>
 
